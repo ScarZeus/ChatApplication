@@ -1,14 +1,14 @@
-package controller;
+package com.Project.ChatApplication.controller;
 
 import lombok.RequiredArgsConstructor;
-import model.User;
+import com.Project.ChatApplication.model.User;
 import org.springframework.http.ResponseEntity;
 import org.springframework.messaging.handler.annotation.MessageMapping;
 import org.springframework.messaging.handler.annotation.Payload;
 import org.springframework.messaging.handler.annotation.SendTo;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import service.UserService;
+import com.Project.ChatApplication.service.UserService;
 
 import java.util.List;
 

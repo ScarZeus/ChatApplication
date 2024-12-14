@@ -1,9 +1,9 @@
-package service;
+package com.Project.ChatApplication.service;
 
-import repository.UserRepo.UserRepository;
+import com.Project.ChatApplication.repository.UserRepo.UserRepository;
 import lombok.RequiredArgsConstructor;
-import model.Status;
-import model.User;
+import com.Project.ChatApplication.model.Status;
+import com.Project.ChatApplication.model.User;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

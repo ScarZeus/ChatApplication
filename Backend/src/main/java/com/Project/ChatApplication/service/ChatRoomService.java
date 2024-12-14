@@ -1,10 +1,9 @@
-package service;
+package com.Project.ChatApplication.service;
 
-import lombok.Builder;
 import lombok.RequiredArgsConstructor;
-import model.ChatRoom;
+import com.Project.ChatApplication.model.ChatRoom;
 import org.springframework.stereotype.Service;
-import repository.ChatRoomRepo.ChatRoomRepo;
+import com.Project.ChatApplication.repository.ChatRoomRepo.ChatRoomRepo;
 
 import java.util.Optional;
 

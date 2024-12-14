@@ -1,7 +1,7 @@
-package repository.UserRepo;
+package com.Project.ChatApplication.repository.UserRepo;
 
-import model.Status;
-import model.User;
+import com.Project.ChatApplication.model.Status;
+import com.Project.ChatApplication.model.User;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
 import java.util.List;

@@ -1,9 +1,9 @@
-package service;
+package com.Project.ChatApplication.service;
 
 import lombok.RequiredArgsConstructor;
-import model.ChatMessage;
+import com.Project.ChatApplication.model.ChatMessage;
 import org.springframework.stereotype.Service;
-import repository.ChatMessageRepo.ChatMessageRepo;
+import com.Project.ChatApplication.repository.ChatMessageRepo.ChatMessageRepo;
 
 @RequiredArgsConstructor
 @Service

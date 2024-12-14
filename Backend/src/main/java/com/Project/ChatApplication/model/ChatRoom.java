@@ -1,4 +1,4 @@
-package model;
+package com.Project.ChatApplication.model;
 
 import lombok.*;
 import org.springframework.data.annotation.Id;
