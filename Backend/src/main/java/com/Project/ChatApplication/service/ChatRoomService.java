@@ -31,7 +31,6 @@ public class ChatRoomService {
         ChatRoom senderReciever=ChatRoom.builder().chatId(chatRoom).senderId(senderId).receiverId(receiverId).build();
         chatRoomRepo.save(recieverSender);
         chatRoomRepo.save(senderReciever);
-
         return chatRoom;
     }
 

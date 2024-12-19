@@ -13,9 +13,9 @@ import java.util.List;
 public class UserService {
     public final UserRepository userRepository;
     public User getUser(String username) {
-        return null;
+      return userRepository.findById(username).orElse(null);
     }
-    public void saveUser(User user) {
+    public void updateUser(User user) {
      user.setStatus(Status.ONLINE);
      userRepository.save(user);
     }
@@ -25,7 +25,20 @@ public class UserService {
         user.setStatus(Status.OFFLINE);
         userRepository.save(user);
     }
+    
+}
+public User addUser(User user){
+    User existeduser = getUser(user.getUsername());
+    if(existeduser!=null){
+        return existeduser;
+    }
+    return userRepository.save(user);
+}  
 
+    
+
+    public void deletUser(String username){
+        userRepository.deleteById(username);
     }
 
    public List<User> getConnectedUsers() {

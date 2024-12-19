@@ -6,16 +6,16 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.Date;
 
+@Data
 @RequiredArgsConstructor
 @AllArgsConstructor
-@NoArgsConstructor
 @Builder
 @Getter
 @Setter
 @Document
 public class ChatMessage {
     @Id
-    private String id;
+    private String chatId;
     private String charRoomId;
     private String sender;
     private String receiver;
